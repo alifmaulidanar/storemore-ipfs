@@ -193,12 +193,21 @@ function App() {
         </>
       ),
       children: (
-        <div className="grid w-full">
-          <p className="w-full py-4">
-            All you need to do is just type something in the input field below
-            if you want to save raw text to IPFS or you can change the input to
-            be a file uploader using the dropdown menu.
+        <div className="grid w-full text-justify gap-y-4">
+          <p>
+            IPFS is a technology that enables distributed storage and access to
+            files Data are not stored on a single server, but are divided and
+            stored across many computers worldwide.
           </p>
+          <p>
+            This means you can store any data on it and access it anywhere and
+            anytime. IPFS can store any format of data, start from just plain
+            text or your operation system folders. You can try storing data
+            (text or file) to IPFS with the form below.
+          </p>
+          <Button type="default" className="w-fit">
+            Learn more about IPFS
+          </Button>
           <div className="grid w-full">
             <Select
               className="ml-auto"
@@ -226,7 +235,7 @@ function App() {
                 >
                   <TextArea
                     rows={6}
-                    placeholder="Don't choose a dictator and a nepobaby in this election..."
+                    placeholder="Lorem ipsum..."
                     className={inputType === "text" ? "" : "hidden"}
                   />
                 </Form.Item>
@@ -368,8 +377,15 @@ function App() {
 
   return (
     <>
-      <div className="w-[650px] mx-auto h-fit">
-        <h1 className="py-16 text-3xl text-center">StoreMore IPFS🚀</h1>
+      <div className="w-[500px] mx-auto h-fit">
+        <h1 className="py-12 text-3xl text-center">
+          <a
+            href="http://storemore.alifmaulidanar.com"
+            rel="noreferrer noopener"
+          >
+            StoreMore IPFS🚀
+          </a>
+        </h1>
         <Tabs centered defaultActiveKey="1" items={items} tabBarGutter={100} />
       </div>
       <Spin spinning={spinning} fullscreen />
