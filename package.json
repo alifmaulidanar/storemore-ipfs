@@ -1,0 +1,14 @@
+{
+  "name": "storemore-ipfs",
+  "version": "1.0.0",
+  "description": "StoreMore IPFS encapsulates the essence of a cutting-edge storage solution, leveraging the InterPlanetary File System (IPFS) technology to offer expansive data storage capabilities. It signifies a shift towards a more efficient, secure, and decentralized approach to data storage and sharing. This service highlights the potential for vast storage space, allowing users to save a wide array of data without the constraints of traditional storage limits. By utilizing the distributed nature of IPFS, StoreMore IPFS enhances data accessibility and redundancy, ensuring data remains reachable even if parts of the network are down. It embodies innovation and practicality, presenting an advanced yet user-friendly platform for data management. Moreover, the emphasis on security through distributed storage and encryption reassures users that their data is protected against losses and cyber threats. StoreMore IPFS represents a future-focused solution for the growing data storage needs in the digital era, offering a smarter way to store more.",
+  "scripts": {
+    "dev": "npm run fe && npm run be",
+    "fe": "cd frontend && npm run dev",
+    "be": "cd backend && npm run dev",
+    "build:fe": "cd frontend && npm run build",
+    "preview:fe": "cd frontend && npm run preview"
+  },
+  "author": "",
+  "license": "ISC"
+}
